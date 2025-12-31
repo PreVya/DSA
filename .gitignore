@@ -1,7 +1,4 @@
-*.exe
+*.out
 *.exe
 *.o
 *.obj
-
-!*.cpp
-**/[a-zA-Z0-9_-]*
