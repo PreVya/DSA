@@ -43,6 +43,18 @@ public:
         }
         cout << "NULL" << endl;
     }
+
+    ~LinkedList() {
+        Node* current = head;
+        while (current != nullptr) {
+            Node* nextNode = current->next;
+            delete current;
+            current = nextNode;
+        }
+        head = nullptr;
+        tail = nullptr;
+        cout << "LinkedList destroyed, memory freed." << endl;
+    }
 };
 
 int main() {
